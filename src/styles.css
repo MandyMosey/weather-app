@@ -1,0 +1,72 @@
+body {
+  font-family: Mukta;
+}
+
+.container {
+  border: 1px solid rgb(134, 47, 199);
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
+}
+
+.presets {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  text-decoration: none;
+}
+
+li.city {
+  display: inline;
+  margin: 0 25px;
+  color: bisque;
+}
+
+#update, .btn {
+  color: #fff;
+  background-color: orange;
+}
+
+h1 {
+  color: orange;
+}
+
+.row{
+  background-color: white;
+  border-radius: 5px;
+}
+
+.temperatures {
+  font-size: 50px;
+}
+
+.current-icon {
+  font-size: 30px;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+li.current-conditions {
+  list-style: none;
+}
+
+.week {
+  background: papayawhip;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  padding: 25px 10px 0px 10px;
+  margin: 0 5px 0;
+  width: 100px;
+}
+
+footer {
+  text-align: center;
+  font-family: Mukta;
+}

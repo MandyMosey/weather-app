@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      
+      <ul class="presets">
+        <li class="city">
+          London
+        </li>
+        <li class="city">
+          New York
+        </li>
+        <li class="city">
+          Tokyo
+        </li>
+        <li class="city">
+          Bejing
+        </li>
+        <li class="city">
+          Rome
+        </li>
+      </ul>
+      
+      <form id="search-form">
+        <input type="text" id="search-box" placeholder="Change City" autocomplete="off" />
+        <input type="submit" value="Update" id="update" />
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn me-md-2" id="current-location" type="button">Current</button>
+          <button class="btn" id="random-loction" type="button">Random</button>
+        </div>
+      </form>
+      
+      <hr />
+      
+      <div class="row">
+        <div class="col-6">
+          <h1 id="current-city"></h1>
+          <h5 id="date"></h5>
+          <div class="left-side">
+            <span class="current-icon">☀️</span>
+            <span class="temperatures" id="temperature"></span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a>
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li class="current-conditions">
+              Precipitation: 0%
+            </li>
+            <li class="current-conditions">
+              Humidity: 77%
+            </li>
+            <li class="current-conditions">
+              Wind: 8 km/h
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr />
+
+      <div class="week">
+        <h6 class="week-title">Monday</h6>
+        <h6 class="card-weather mb-2 text-muted">50° F</h6>
+        <p class="card-icon">☀️</p>
+      </div>
+      <div class="week">
+        <h6 class="week-title">Tuesday</h6>
+        <h6 class="card-weather mb-2 text-muted">58° F</h6>
+        <p class="card-icon">🌧</p>
+      </div>
+      <div class="week">
+        <h6 class="week-title">Wednesday</h6>
+        <h6 class="card-weather mb-2 text-muted">64° F</h6>
+        <p class="card-icon">💨</p>
+      </div>
+      <div class="week">
+        <h6 class="week-title">Thursday</h6>
+        <h6 class="card-weather mb-2 text-muted">60° F</h6>
+        <p class="card-icon">⛅️</p>
+      </div>
+      <div class="week">
+        <h6 class="week-title">Friday</h6>
+        <h6 class="card-weather mb-2 text-muted">52° F</h6>
+        <p class="card-icon">⛈</p>
+      </div>
+
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+  <footer>
+    Coded by Amanda Denny
+  </footer>
+</html>
