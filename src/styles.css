@@ -67,7 +67,7 @@ h1 {
   margin-bottom: -10px;
 }
 
-#date {
+.date, #date {
   color: rgba(39,33,66,.4);
   font-size: 18px;
   font-weight: 600;
