@@ -88,13 +88,13 @@ padding-top: 25px;
 text-align: center;
 }
 
-.current-icon {
+#icon {
   font-size: 60px;
 }
 
 #temperature {
   color: #8F2FC1;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 600;
 }
 

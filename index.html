@@ -56,20 +56,16 @@
           <h1 id="current-city"></h1>
           <div id="date"></div>
           <ul>
-            <li class="current-conditions">
-              Description
-            </li>
-            <li class="current-conditions">
-              Humidity: 77%
-            </li>
-            <li class="current-conditions">
-              Wind: 8 km/h
-            </li>
+            <li class="current-conditions" id="description"></li>
+            <li class="current-conditions">Humidity: <span id="humidity"></span>%</li>
+            <li class="current-conditions">Wind: <span id="wind"></span> m/h</li>
           </ul>
         </div>
         <div class="col-6">
           <div class="now-temp">
-            <span class="current-icon">☀️</span>
+            <span class="current-icon">
+              <img src="" alt="Clear" id="icon"/>
+            </span>
             <span class="temperatures" id="temperature"></span>
             <span class="units">
               <a href="#" id="celsius-link">°C</a>

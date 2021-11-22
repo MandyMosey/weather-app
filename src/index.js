@@ -1,3 +1,26 @@
+/*function displayTemperature(response) {
+  console.log(response.data.main.temp);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = response.data.main.temp;
+}
+
+
+let apiKey = "f81484afceeb8c759417d745c4c551f4"
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=${apiKey}&units=metric`;
+
+
+axios.get(apiUrl).then(displayTemperature);*/
+
+
+
+
+
+
+
+
+
+
+
 //Current Date and Time
 function formatDate(date) {
   let hours = date.getHours();
@@ -50,7 +73,7 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 
 
-
+//Current Conditions
 function showWeather(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
