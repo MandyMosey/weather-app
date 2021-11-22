@@ -3,26 +3,26 @@ body {
 }
 
 .container {
+  background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
   border: 1px solid rgb(134, 47, 199);
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
-  background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
 }
 
 .presets {
+  display: inline;
   font-weight: 500;
   list-style-type: none;
   text-align: center;
-  display: inline;
   text-decoration: none;
 }
 
 li.city {
+  color: bisque;
   display: inline;
   margin: 0 25px;
-  color: bisque;
 }
 
 #search-box {
@@ -53,44 +53,91 @@ li.city {
   background-color: orange;
 }
 
-h1 {
-  color: orange;
-}
-
 .row{
   background-color: white;
   border-radius: 5px;
+  margin: 10px 0 0 0;
+  padding: 10px 0 2px 0;
 }
 
-a {
-  color: purple;
-  text-decoration: none;
-  background-color: transparent;
+h1 {
+  color: orange;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+#date {
+  color: rgba(39,33,66,.4);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-left: 2px;
 }
 
 li.current-conditions {
+  color: rgba(39,33,66,.4);
+  font-size: 16px;
+  font-weight: 600;
   list-style: none;
+
 }
 
-.temperatures {
-  font-size: 50px;
+.now-temp {
+padding-top: 25px;
+text-align: center;
 }
 
 .current-icon {
-  font-size: 30px;
+  font-size: 60px;
+}
+
+#temperature {
+  color: #8F2FC1;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.units {
+  color: #8F2FC1;
+  position: relative;
+  top: -40px;
+}
+
+a {
+  color: #8F2FC1;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .week {
   background: papayawhip;
   border-radius: 5px;
   display: inline-block;
-  text-align: center;
+  font-size: 30px;
+  margin: 10px 5px 0;
   padding: 25px 10px 0px 10px;
-  margin: 0 5px 0;
+  text-align: center;
   width: 100px;
+}
+.week-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.card-icon{
+  font-size: 35px;
 }
 
 footer {
+  color: #fff;
+  margin: 8px 0 -8px 0;
   text-align: center;
-  font-family: Mukta;
+}
+
+.foot-link {
+  color: orange;
+}
+
+.foot-link:hover {
+  color: bisque;
 }
