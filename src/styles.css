@@ -11,7 +11,7 @@ body {
   max-width: 600px;
 }
 
-.presets {
+.preset {
   display: inline;
   font-weight: 500;
   list-style-type: none;
@@ -19,7 +19,7 @@ body {
   text-decoration: none;
 }
 
-li.city {
+li#presets {
   color: bisque;
   display: inline;
   margin: 0 25px;
@@ -80,6 +80,7 @@ li.current-conditions {
   font-size: 16px;
   font-weight: 600;
   list-style: none;
+  text-transform: capitalize;
 
 }
 
@@ -94,7 +95,7 @@ text-align: center;
 
 #temperature {
   color: #8F2FC1;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 600;
 }
 
