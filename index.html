@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      
+    
       <ul class="presets">
         <li class="city">
           London
@@ -40,35 +40,23 @@
           Rome
         </li>
       </ul>
-      
-      <form id="search-form">
+
+
+      <form id="search-form" style="margin: 10px 0;">
         <input type="text" id="search-box" placeholder="Change City" autocomplete="off" />
         <input type="submit" value="Update" id="update" />
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button class="btn me-md-2" id="current-location" type="button">Current</button>
-          <button class="btn" id="random-loction" type="button">Random</button>
-        </div>
+        <button class="btn" id="current-location" type="button" style="margin-left: 176px;">Current</button>
+        <button class="btn" id="random-loction" type="button" style="margin: 0px;">Random</button>
       </form>
-      
-      <hr />
-      
+
+
       <div class="row">
         <div class="col-6">
           <h1 id="current-city"></h1>
-          <h5 id="date"></h5>
-          <div class="left-side">
-            <span class="current-icon">☀️</span>
-            <span class="temperatures" id="temperature"></span>
-            <span class="units">
-              <a href="#" id="celsius-link">°C</a>
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-          </div>
-        </div>
-        <div class="col-6">
+          <div id="date"></div>
           <ul>
             <li class="current-conditions">
-              Precipitation: 0%
+              Description
             </li>
             <li class="current-conditions">
               Humidity: 77%
@@ -78,9 +66,20 @@
             </li>
           </ul>
         </div>
+        <div class="col-6">
+          <div class="float-left">
+            <span class="current-icon">☀️</span>
+            <span class="temperatures" id="temperature"></span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a>
+              |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+        </div>
       </div>
       
-      <hr />
+      <hr >
 
       <div class="week">
         <h6 class="week-title">Monday</h6>

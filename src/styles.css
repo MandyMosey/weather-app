@@ -12,6 +12,7 @@ body {
 }
 
 .presets {
+  font-weight: 500;
   list-style-type: none;
   text-align: center;
   display: inline;
@@ -24,8 +25,31 @@ li.city {
   color: bisque;
 }
 
-#update, .btn {
+#search-box {
+  border: none;
+  border-radius: 4px;
+}
+
+#update {
   color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 4px;
+  padding: 1px 10px;
+}
+
+#update:hover {
+  color: #8F2FC1;
+}
+
+.btn {
+  color: #fff;
+  background-color: orange;
+  line-height: 12px;
+}
+
+.btn:hover {
+  color: #8F2FC1;
   background-color: orange;
 }
 
@@ -38,14 +62,6 @@ h1 {
   border-radius: 5px;
 }
 
-.temperatures {
-  font-size: 50px;
-}
-
-.current-icon {
-  font-size: 30px;
-}
-
 a {
   color: purple;
   text-decoration: none;
@@ -54,6 +70,14 @@ a {
 
 li.current-conditions {
   list-style: none;
+}
+
+.temperatures {
+  font-size: 50px;
+}
+
+.current-icon {
+  font-size: 30px;
 }
 
 .week {
