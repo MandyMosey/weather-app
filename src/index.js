@@ -59,10 +59,8 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "f81484afceeb8c759417d745c4c551f4"
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`
-  console.log(apiUrl)
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -106,7 +104,7 @@ let apiKey = "f81484afceeb8c759417d745c4c551f4"
 let city = "Boston";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
-function showCelsiusTemperature(event) {
+/*function showCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   fahrenheitLink.classList.remove("active");
@@ -134,7 +132,7 @@ let celsiusLink = document.querySelector("#celsius-link")
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link")
-fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);*/
 
 search("Boston");
 
