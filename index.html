@@ -49,59 +49,52 @@
         <button class="btn" id="random-loction" type="button" style="margin: 0px;">Random</button>
       </form>
 
-
-      <div class="row">
-
-        <div class="col-6">
-          <h1 id="city"></h1>
-          <div class="date">Last updated: <span id="date"></span></div>
-          <ul>
-            <li class="current-conditions" id="description"></li>
-            <li class="current-conditions">Humidity: <span id="humidity"></span>%</li>
-            <li class="current-conditions">Wind: <span id="wind"></span> m/h</li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <div class="now-temp">
-            <span class="current-icon">
-              <img src="https://openweathermap.org/img/wn/10d@2x.png" id="icon"/>
-            </span>
-            <span class="temperatures" id="temperature"></span>
-            <span class="units">
-              <a href="#" id="fahrenheit-link" class="active">°F</a>
-              |
-              <a href="#" id="celsius-link">°C</a>
-            </span>
+      <div class="main-weather">
+        <div class="row">
+          <div class="col-6">
+            <h1 id="city"></h1>
+            <div class="date">Last updated: <span id="date"></span></div>
+            <ul class="current-conditions">
+              <li class="current-conditions" id="description"></li>
+              <li class="current-conditions">Humidity: <span id="humidity"></span>%</li>
+              <li class="current-conditions">Wind: <span id="wind"></span> m/h</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="now-temp">
+              <span class="current-icon">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" id="icon"/>
+              </span>
+              <span class="temperatures" id="temperature"></span>
+              <span class="units">
+                <a href="#" id="fahrenheit-link" class="active">°F</a>
+                |
+                <a href="#" id="celsius-link">°C</a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
-      <!--
-      <div class="week">
-        <h6 class="week-title">Monday</h6>
-        <h6 class="card-weather mb-2 text-muted">50° F</h6>
-        <p class="card-icon">☀️</p>
+
+
+      
+      <div class="forecast">
+        <div class="row">
+          <div class="">
+            <div class="forecast-date">
+              Monday
+            </div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="60"/>
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">50°</span>
+              <span class="forecast-temp-min">20°</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="week">
-        <h6 class="week-title">Tuesday</h6>
-        <h6 class="card-weather mb-2 text-muted">58° F</h6>
-        <p class="card-icon">🌧</p>
-      </div>
-      <div class="week">
-        <h6 class="week-title">Wednesday</h6>
-        <h6 class="card-weather mb-2 text-muted">64° F</h6>
-        <p class="card-icon">💨</p>
-      </div>
-      <div class="week">
-        <h6 class="week-title">Thursday</h6>
-        <h6 class="card-weather mb-2 text-muted">60° F</h6>
-        <p class="card-icon">⛅️</p>
-      </div>
-      <div class="week">
-        <h6 class="week-title">Friday</h6>
-        <h6 class="card-weather mb-2 text-muted">52° F</h6>
-        <p class="card-icon">⛈</p>
-      </div>
-      -->
+      
+
+
       <footer>
         Coded by Amanda J. Denny - open sourced on 
         <a class="foot-link" href="https://github.com/MandyMosey/weather-app" 

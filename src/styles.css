@@ -53,11 +53,11 @@ li#presets {
   background-color: orange;
 }
 
-.row{
+.main-weather {
   background-color: white;
   border-radius: 5px;
   margin: 10px 0 0 0;
-  padding: 10px 0 2px 0;
+  padding: 10px 0 2px 10px;
 }
 
 h1 {
@@ -72,16 +72,19 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   margin-top: -10px;
-  margin-left: 2px;
+  margin-left: 3px;
+}
+
+ul.current-conditions {
+  padding: 0 0 0 3px;
 }
 
 li.current-conditions {
   color: rgba(39,33,66,.4);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   list-style: none;
   text-transform: capitalize;
-
 }
 
 .now-temp {
@@ -117,25 +120,26 @@ a.active {
 
 a:hover {
   color: #8F2FC1;
-
 }
 
-.week {
+.forecast {
   background: papayawhip;
   border-radius: 5px;
-  display: inline-block;
-  font-size: 30px;
-  margin: 10px 5px 0;
-  padding: 25px 10px 0px 10px;
   text-align: center;
   width: 100px;
 }
-.week-title {
-  font-size: 18px;
-  font-weight: 400;
+
+.forecast-date {
+  font-size: 20px;
+  opacity: 0.6;
 }
-.card-icon{
-  font-size: 35px;
+
+.forecast-temp {
+  font-size: 16px;
+}
+
+.forecast-temp-min {
+  opacity: 0.5;
 }
 
 footer {
