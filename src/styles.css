@@ -123,23 +123,28 @@ a:hover {
 }
 
 .forecast {
-  background: papayawhip;
-  border-radius: 5px;
   text-align: center;
-  width: 100px;
+  margin-left: 13px;
 }
 
 .forecast-date {
-  font-size: 20px;
+  font-size: 15px;
   opacity: 0.6;
 }
 
 .forecast-temp {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .forecast-temp-min {
   opacity: 0.5;
+}
+
+.col-2 {
+  width: 90px;
+  background: papayawhip;
+  border-radius: 5px;
+  margin: 10px 5px 6px 0;
 }
 
 footer {

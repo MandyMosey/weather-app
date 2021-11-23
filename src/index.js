@@ -22,6 +22,29 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  days.forEach(function (day){
+    forecastHTML = forecastHTML +
+      `
+      <div class="col-2">
+        <div class="forecast-date">${day}</div>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="60"/>
+        <div class="forecast-temp">
+          <span class="forecast-temp-max">50°</span>          
+          <span class="forecast-temp-min">20°</span>
+        </div>
+      </div>
+  `;
+  });
+  
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -78,6 +101,8 @@ function showFahrenheitTemperature(event) {
 
 let fahrenheitTemperature = null;
 
+
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -88,3 +113,4 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link")
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 search("Boston");
+displayForecast();
